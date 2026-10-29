@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa Solidária | Como Ajudar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Mesa<span>Solidária</span></a>
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menu">&#9776;</button>
+      <nav>
+        <ul id="menu-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="como-ajudar.html" class="ativo">Como Ajudar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-title"><div class="container"><h1>Como Ajudar</h1></div></div>
+
+  <section>
+    <div class="container">
+      <h2>Calculadora de impacto</h2>
+      <p style="margin-bottom:16px">Descubra quantas refeições a sua doação pode gerar.</p>
+      <form id="calc-form" class="calc">
+        <label for="kg">Quantidade de alimentos (kg)</label>
+        <input type="number" id="kg" min="1" placeholder="Ex.: 10">
+        <button type="submit" class="btn">Calcular</button>
+        <output id="calc-resultado"></output>
+      </form>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <h2>Seja voluntário</h2>
+      <form id="form-voluntario" novalidate>
+        <label for="v-nome">Nome completo</label>
+        <input type="text" id="v-nome" data-obrigatorio>
+        <span class="erro"></span>
+
+        <label for="v-email">E-mail</label>
+        <input type="email" id="v-email" data-obrigatorio>
+        <span class="erro"></span>
+
+        <label for="v-tel">Telefone</label>
+        <input type="tel" id="v-tel" data-obrigatorio data-tipo="telefone" placeholder="(11) 99999-9999">
+        <span class="erro"></span>
+
+        <label for="v-area">Área de interesse</label>
+        <select id="v-area" data-obrigatorio>
+          <option value="">Selecione...</option>
+          <option>Coleta de alimentos</option>
+          <option>Triagem e embalagem</option>
+          <option>Distribuição</option>
+          <option>Divulgação e redes sociais</option>
+        </select>
+        <span class="erro"></span>
+
+        <button type="submit" class="btn">Quero ser voluntário</button>
+        <div class="sucesso" id="sucesso-voluntario">Cadastro enviado! Entraremos em contato em breve.</div>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <details><summary>Que alimentos posso doar?</summary><p>Alimentos não perecíveis dentro da validade, hortifrúti em bom estado e produtos refrigerados com cadeia de frio garantida.</p></details>
+      <details><summary>Vocês retiram a doação?</summary><p>Sim, para doações de empresas parceiras. Pessoas físicas podem levar até o nosso ponto de coleta.</p></details>
+      <details><summary>Preciso ter experiência para ser voluntário?</summary><p>Não. Oferecemos orientação inicial e você escolhe o horário que cabe na sua rotina.</p></details>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> Mesa Solidária. Projeto acadêmico fictício - AC1.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

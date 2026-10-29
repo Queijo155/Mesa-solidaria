@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa Solidária | Contato</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Mesa<span>Solidária</span>
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menu">&#9776;
+
+      </button>
+      <nav>
+        <ul id="menu-lista">
+          <li><a href="index.html">Início</a>
+          </li>
+          <li><a href="sobre.html">Sobre</a>
+          </li>
+          <li><a href="como-ajudar.html">Como Ajudar</a>
+          </li>
+          <li><a href="contato.html" class="ativo">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-title"><div class="container"><h1>Fale Conosco</h1></div>
+</div>
+
+  <section>
+    <div class="container">
+      <div class="grid" style="align-items:start">
+        <div>
+          <h2>Envie uma mensagem
+
+          </h2>
+          <form id="form-contato" novalidate>
+            <label for="c-nome">Nome</label>
+            <input type="text" id="c-nome" data-obrigatorio>
+            <span class="erro"></span>
+
+            <label for="c-email">E-mail</label>
+            <input type="email" id="c-email" data-obrigatorio>
+            <span class="erro"></span>
+
+            <label for="c-msg">Mensagem</label>
+            <textarea id="c-msg" rows="5" data-obrigatorio></textarea>
+            <span class="erro"></span>
+
+            <button type="submit" class="btn">Enviar</button>
+            <div class="sucesso" id="sucesso-contato">Mensagem enviada com sucesso! Obrigado pelo contato.</div>
+          </form>
+        </div>
+        <div>
+          <h2>Informações</h2>
+          <div class="card">
+            <p><strong>Endereço:</strong> Rua Taboão, 67 - São Paulo/SP</p>
+            <p><strong>Telefone:</strong> (11) 4652-87624</p>
+            <p><strong>E-mail:</strong> contato@mesasolidaria.oficial</p>
+            <p><strong>Atendimento:</strong> seg. a sex., das 8h às 17h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> Mesa Solidária - AC1.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
